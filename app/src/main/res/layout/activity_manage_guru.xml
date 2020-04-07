@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".guru.manage_guru">
+
+        <EditText
+            android:id="@+id/textNIP"
+            android:inputType="number"
+            android:ems="10"
+            android:hint="NIP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </EditText>
+
+        <EditText
+            android:id="@+id/textName"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:hint="Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </EditText>
+
+        <EditText
+            android:id="@+id/textAddress"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:hint="Address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </EditText>
+
+        <EditText
+            android:id="@+id/textPhone"
+            android:inputType="number"
+            android:ems="10"
+            android:hint="Number Phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </EditText>
+
+        <EditText
+            android:id="@+id/textgender"
+            android:text="Gender"
+            android:textSize="16sp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </EditText>
+
+        <RadioGroup
+            android:id="@+id/rgGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radioBoy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Male">
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/radioGirl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Female">
+            </RadioButton>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subject : "
+            android:textSize="16dp"
+            android:textStyle="bold"></TextView>
+
+        <CheckBox
+            android:id="@+id/checkboxandroid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android"
+            android:textSize="16dp">
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/checkboxreact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="React"
+            android:textSize="16dp"></CheckBox>
+
+    <CheckBox
+        android:id="@+id/checkboxlaravel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Laravel"
+        android:textSize="16dp"></CheckBox>
+
+    <CheckBox
+        android:id="@+id/checkboxnode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Node"
+        android:textSize="16dp"></CheckBox>
+
+    <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Add">
+    </Button>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change"
+        android:visibility="gone"></Button>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:visibility="gone">
+        </Button>
+
+</LinearLayout>
